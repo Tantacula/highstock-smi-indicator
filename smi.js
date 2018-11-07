@@ -284,7 +284,8 @@
 
                     let SMI = {values: [], xData: [], yData: []};
 
-                    for (let i = 0; i < avgrel.values.length; i++) {
+                    let avgRelLen = avgrel.values ? avgrel.values.length : 0;
+                    for (let i = 0; i < avgRelLen; i++) {
                         let SMIVal;
                         if (!avgrel.values[i][1] || !avgdiff.values[i][1]) {
                             SMIVal = 0;
